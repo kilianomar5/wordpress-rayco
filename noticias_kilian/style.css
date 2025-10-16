@@ -1,0 +1,217 @@
+/*
+Theme Name: Noticias Kilian
+Author: Kilian
+Description: Tema básico de noticias con menús dinámicos.
+Version: 1.0
+Text Domain: noticias_kilian
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+header img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+article {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: #222831;
+  color: #eeeeee;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  list-style: none;
+}
+
+.footer-menus {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-legal, .footer-social {
+  margin: 10px 0;
+  list-style: none;
+}
+
+.footer-legal ul, .footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-legal a:hover, .footer-social a:hover {
+  color: #fff;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Movil */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  header img {
+    height: 40px;
+  }
+
+  article {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  article h2 {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    padding: 30px 40px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-legal ul,
+  .footer-social ul {
+    justify-content: flex-start;
+  }
+
+  .footer-center {
+    text-align: center;
+    flex: 1;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px){
+ nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav li {
+    margin: 5px 10px;
+  }
+
+  header {
+    text-align: center;
+    padding: 15px;
+  }
+
+  header img {
+    height: 45px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 20px 40px;
+  }
+
+  article {
+    width: 90%;
+    max-width: 500px;
+  }
+  article h2 {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    padding: 30px 40px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-legal ul,
+  .footer-social ul {
+    justify-content: flex-start;
+  }
+
+  .footer-center {
+    text-align: center;
+    flex: 1;
+  }
+}
